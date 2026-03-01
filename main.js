@@ -9,7 +9,7 @@ body.setAttribute('data-bs-theme', currentTheme);
 updateThemeIcon(currentTheme);  
 
 themeToggle.addEventListener('click', () => {
-  const currentTheme = body.getAttribute('data-bs-theme');
+  const currentTheme = body.getAttribute('data-bs-theme'); 
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
   
   body.setAttribute('data-bs-theme', newTheme);
