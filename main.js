@@ -2,7 +2,7 @@
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 const icon = themeToggle.querySelector('i');
- 
+   
 // Check for saved theme preference or default to 'dark'
 const currentTheme = localStorage.getItem('theme') || 'dark';
 body.setAttribute('data-bs-theme', currentTheme);
