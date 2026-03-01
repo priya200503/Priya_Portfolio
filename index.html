@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,172 +6,784 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Priya Bisht - Portfolio</title>
-
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<body data-bs-theme="dark">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Priya Bisht</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="text-gradient">Priya Bisht</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navMenu">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#services">Services</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-2" id="themeToggle">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-dark text-white text-center d-flex align-items-center"
-        style="height:100vh; padding-top:80px;">
+    <!-- Home Section -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100">
         <div class="container">
-            <h1 class="display-4 fw-bold">Hi, I'm Priya Bisht</h1>
-            <p class="lead mt-3">
-                BCA Student | Aspiring Java Full Stack Developer
-            </p>
-            <p>
-                Skilled in Java, HTML, CSS, JavaScript, Bootstrap, MySQL, REST APIs and UI/UX Design.
-                Passionate about building responsive web applications and learning new technologies.
-            </p>
-            <a href="#projects" class="btn btn-primary btn-lg mt-3">View Projects</a>
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold mb-4">
+                            Hi, I'm <span class="text-gradient">Priya Bisht</span>
+                        </h1>
+                        <h2 class="h3 mb-4">
+                            I'm a <span id="typed-text" class="text-gradient"></span>
+                        </h2>
+                        <p class="lead mb-4">
+    Bachelor of Computer Application student with strong foundation in Java, Web Development, and Software Testing.
+    Skilled in HTML, CSS, JavaScript, Bootstrap, MySQL, and REST APIs.
+    Passionate about building responsive web applications and continuously learning new technologies.
+</p>
+                        <!-- <p class="lead mb-4"> -->
+                            <!-- Skilled AI Solutions Developer</span> <br>
+                            with more than 2 years of experience in designing,
+                            developing, and implementing software applications ,
+                            Specializing in Responsive,
+                            User-Friendly Web
+                            Applications with HTML5, CSS3,
+                            JavaScript (ES6),
+                            Angular.js, Next.js, Node.js, Asp Dot Net, SQL, Express.js, Context API, Redux Toolkit and
+                            Bootstrap.
+                        </p> -->
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3">View My Work</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="" target="_blank" class="me-3"><i
+                                    class="bi bi-github"></i></a>
+                            <a href="" target="_blank" class="me-3"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a href="" class="me-3"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <div class="floating-shapes">
+                                <div class="shape shape-1"></div>
+                                <div class="shape shape-2"></div>
+                                <div class="shape shape-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <i class="bi bi-chevron-down"></i>
+            </a>
         </div>
     </section>
 
-    <!-- About -->
+    <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">About Me</h2>
-            <p class="text-center">
-                I am currently pursuing Bachelor of Computer Application from Indira Gandhi National Open University.
-                I have strong foundation in Java programming, OOP concepts, MySQL, REST API and modern web technologies.
-                I am seeking opportunities where I can grow technically and contribute effectively to real-world projects.
-            </p>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Technical Skills</h2>
-            <div class="row text-center">
-
-                <div class="col-md-6">
-                    <h4>Frontend</h4>
-                    <p>HTML, CSS, JavaScript, Bootstrap, UI/UX Design</p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center mb-5">About Me</h2>
                 </div>
-
-                <div class="col-md-6">
-                    <h4>Backend & Programming</h4>
-                    <p>Java, MySQL, Spring Boot, REST API, OOP Concepts</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-4 mb-lg-0 about-grid">
+                    <div class="about-img">
+                        <img src="priyaimage.jpeg" alt="About Image" />
+                    </div>
                 </div>
+                <div class="col-lg-8">
+                    <div class="about-content">
+                        <h3 class="h4 mb-3">BCA Student & Aspiring Java Full Stack Developer</h3>
 
+<p class="mb-4">
+    I am currently pursuing Bachelor of Computer Application from Indira Gandhi National Open University.
+    I have strong knowledge of Java programming, MySQL, REST APIs, and modern web technologies.
+    I enjoy building user-friendly and responsive web applications.
+</p>
+
+<p class="mb-4">
+    I am passionate about Web App Development, Software Testing (Manual & Automation),
+    and Database Management Systems. I am seeking opportunities where I can grow
+    technically and contribute effectively to real-world projects.
+</p>
+
+<ul>
+    <li>Web Application Development</li>
+    <li>Software Testing (Manual & Automation)</li>
+    <li>Database Management</li>
+    <li>Java Programming</li>
+    <li>UI/UX Design</li>
+</ul>
+                        <!-- <h3 class="h4 mb-3">AI Solutions Developer & UI/UX Enthusiast</h3>
+                        <p class="mb-4">
+                            Skilled AI Solutions Developer</span> <br>
+                            with more than 2 years of experience in designing,
+                            developing, and implementing software applications ,
+                            Specializing in Responsive,
+                            User-Friendly Web
+                            Applications with HTML5, CSS3,
+                            JavaScript (ES6),
+                            Angular.js, Next.js, Node.js, Asp Dot Net, SQL, Express.js, Context API, Redux Toolkit and
+                            Bootstrap to write scalable
+                            and secure code with knack for problem-solving.
+                        </p>
+                        <p class="mb-4">
+                            Successfully optimized a visualization app resulting in 20% increase in efficiency.
+                            Passionate about creating innovative digital experiences and solving real-world problems.
+                        </p>
+                        <ul>
+                            <li>AI Solutions</li>
+                            <li>Web Development</li>
+                            <li>Data Analyst </li>
+                            <li>Frontend Development</li>
+                            <li>Backend Development</li>
+                            <li>UI/UX Design</li>
+                            <li>Database Design</li>
+                            <li>API Development</li>
+                        </ul> -->
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Services  -->
+    <!-- <section id="services" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center mb-5">Services</h2>
+                </div> 
+            </div>
+            <div class="service-cards">
+                <div class="card active">
+                    <div class="card-icon"><i class="fa-brands fa-wordpress"></i></div>
+                    <div class="card-number">01</div>
+                    <h3>Wordpress Development</h3>
+                    <p>I develop custom WordPress themes and plugins, with expertise in Elementor and WooCommerce
+                        integration. I
+                        also focus on performance optimization and security to ensure fast, reliable websites..</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-brands fa-react"></i></div>
+                    <div class="card-number">02</div>
+                    <h3>Full Stack Development</h3>
+                    <p>I build responsive and scalable web apps using Angular, leveraging components, hooks, and
+                        routing. My
+                        expertise includes
+                        API integration, Api Creation, Procedure making, Curd Operations, Secure Coding, state
+                        management with Redux, and modern styling tools like Tailwind CSS.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+                    <div class="card-number">03</div>
+                    <h3>Hosting & Domain Management</h3>
+                    <p>I manage complete domain setup, DNS configuration, hosting migration, and email setup. I’m
+                        experienced with
+                        cPanel, FTP,
+                        SSL installation, server issue troubleshooting, and regular site backups.</p>
+                </div>
+                 <div class="card">
+                    <div class="card-icon"><i class="fa-brands fa-wordpress"></i></div>
+                    <div class="card-number">04</div>
+                    <h3>Power BI Development</h3>
+                    <p>I use Power BI for data visualization and dashboard development by connecting it directly with SQL Server stored procedures and queries. I write optimized SQL procedures to extract, transform, and aggregate data from the database, which are then used as data sources in Power BI.</p>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-dark-subtle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center mb-5">Skills & Technologies</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-category">
+                        <h4 class="h5 mb-3">Frontend & Core Technologies</h4>
+
+HTML, CSS, JavaScript, Bootstrap, UI/UX Design
+                        <!-- <h4 class="h5 mb-3">Frontend Development</h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>HTML</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>CSS</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>JavaScript</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Angular</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Bootstrap</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-category">
+                        <h4 class="h5 mb-3">Backend & Programming</h4>
+
+Java, MySQL, Spring Boot, REST API, OOPs Concepts
+                        <!-- <h4 class="h5 mb-3">Backend Development</h4>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>ASP Dotnet</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Node.js</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>SQL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Express.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>MongoDB</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 78%"></div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Projects</h2>
             <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center mb-5">Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+    <div class="project-card">
+        <div class="project-content">
+            <h4 class="h5 mb-2">Personal Portfolio Website</h4>
+            <p>
+                Developed and deployed a responsive personal portfolio website
+                using HTML, CSS, and JavaScript.
+                Integrated Google Maps API to display location.
+                Built contact form with local storage functionality.
+            </p>
+            <div class="project-tech">
+                <span class="badge bg-secondary me-1 mb-1">HTML</span>
+                <span class="badge bg-secondary me-1 mb-1">CSS</span>
+                <span class="badge bg-secondary me-1 mb-1">JavaScript</span>
+                <span class="badge bg-secondary me-1 mb-1">Google Maps API</span>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <!-- Portfolio Project -->
-                <div class="col-md-6 mb-4">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Personal Portfolio Website</h5>
-                            <p class="card-text">
-                                Developed a responsive portfolio website using HTML, CSS and JavaScript.
-                                Integrated Google Maps API and implemented a contact form with local storage support.
-                            </p>
-                            <span class="badge bg-secondary">HTML</span>
-                            <span class="badge bg-secondary">CSS</span>
-                            <span class="badge bg-secondary">JavaScript</span>
+<div class="col-lg-6 mb-4">
+    <div class="project-card">
+        <div class="project-content">
+            <h4 class="h5 mb-2">Student Grade Calculator</h4>
+            <p>
+                Console-based Java application that calculates total marks,
+                average percentage, and grade based on user input.
+                Implemented arithmetic and logical operations using Java.
+            </p>
+            <div class="project-tech">
+                <span class="badge bg-secondary me-1 mb-1">Java</span>
+            </div>
+        </div>
+    </div>
+</div>
+                <!-- <div class="col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="portfolio.png" alt="Personal Portfolio Website" class="img-fluid" />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="h5 mb-2">Personal Portfolio Website</h4>
+                            <p>A responsive personal portfolio website showcasing projects and professional background.
+                                Built with HTML, CSS, JavaScript, and Google Maps API integration.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-secondary me-1 mb-1">HTML</span>
+                                <span class="badge bg-secondary me-1 mb-1">CSS</span>
+                                <span class="badge bg-secondary me-1 mb-1">JavaScript</span>
+                                <span class="badge bg-secondary me-1 mb-1">Google Maps API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="atstracker.png" alt="ATS Tracker" class="img-fluid" />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="h5 mb-2">ATS Tracker</h4>
+                            <p>Developed an Applicant Tracking System (ATS) using HTML, CSS, JS to streamline resume
+                                screening and shortlisting. Built an UI to upload and parse multiple resumes
+                                simultaneously along with job description. Automated candidate ranking with visual
+                                scores, allowing multi-candidate selection for faster recruitment decisions.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-secondary me-1 mb-1">HTML</span>
+                                <span class="badge bg-secondary me-1 mb-1">CSS</span>
+                                <span class="badge bg-secondary me-1 mb-1">JavaScript</span>
+                                <span class="badge bg-secondary me-1 mb-1">Gemini</span>
+                            </div>
+                        </div>
+                        <a href="https://dpandey2001.github.io/ats_resume_tracker/dashboard" target="_blank"
+                            class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="chatbot.png" alt="Chat-bot Application" class="img-fluid" />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="h5 mb-2">Chat-bot Application</h4>
+                            <p>Developed a Chat-bot using Gemini API, Node.js, and Express.js with scraping logic and
+                                extensions for LLM and neural structure integration.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-secondary me-1 mb-1">Angular</span>
+                                <span class="badge bg-secondary me-1 mb-1">Node.js</span>
+                                <span class="badge bg-secondary me-1 mb-1">Express.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="grocerystore.png" alt="Grocery Store E-commerce Website" class="img-fluid" />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="h5 mb-2">Grocery Store E-commerce Website</h4>
+                            <p>A modern and user-friendly grocery store e-commerce platform designed to provide seamless
+                                shopping experience with easy navigation, secure payment options, and efficient order
+                                management.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-secondary me-1 mb-1">HTML</span>
+                                <span class="badge bg-secondary me-1 mb-1">CSS</span>
+                                <span class="badge bg-secondary me-1 mb-1">JavaScript</span>
+                            </div>
+                        </div>
+                        <a href="https://dpandey2001.github.io/SHOPPING-APP/" target="_blank"
+                            class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="course.jpg" alt="Blog Website" class="img-fluid" />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="h5 mb-2">Blog Website</h4>
+                            <p>A modern and user-friendly blog website platform designed to provide seamless experience
+                                with easy navigation and full content to read.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-secondary me-1 mb-1">HTML</span>
+                                <span class="badge bg-secondary me-1 mb-1">CSS</span>
+                                <span class="badge bg-secondary me-1 mb-1">JavaScript</span>
+                            </div>
+                        </div>
+                        <a href="https://dpandey2001.github.io/BLOG/" target="_blank" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="atstracker.png" alt="Blog Website" class="img-fluid" />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="h5 mb-2"> HR Interview Bot</h4>
+                            <p> 	Developed an HR Interview bot using Reat, Python, Node JS to streamline candidate resumes for screening and shortlisting and built multiple UI.</p>
+                            <div class="project-tech"> 
+                                <span class="badge bg-secondary me-1 mb-1">PYTHON</span>
+                                <span class="badge bg-secondary me-1 mb-1">Node JS</span>
+                                <span class="badge bg-secondary me-1 mb-1">REACT</span> 
+                            </div>
+                        </div> -->
+                        <!-- <a href="https://dpandey2001.github.io/FRUIT-GAME/" target="_blank" class="stretched-link"></a> -->
+                    <!-- </div>
+                </div> 
+                 <div class="col-lg-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="powebi1.png" alt="Blog Website" class="img-fluid" />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="h5 mb-2"> Power BI Dashboards</h4>
+                            <p> 	I use Power BI for data visualization and dashboard development by connecting it directly with SQL Server stored procedures and queries. I write optimized SQL procedures to extract, transform, and aggregate data from the database, which are then used as data sources in Power BI.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-secondary me-1 mb-1">Power BI</span>
+                                <!-- <span class="badge bg-secondary me-1 mb-1">Node JS</span>
+                                <span class="badge bg-secondary me-1 mb-1">REACT</span>  --
+                            </div>
+                        </div>
+                        <!-- <a href="https://dpandey2001.github.io/FRUIT-GAME/" target="_blank" class="stretched-link"></a> --
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <!-- <section id="resume" class="py-5 bg-dark-subtle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center mb-5">Resume</h2>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex justify-content-between flex-wrap">
+                    <h2>Priya Bisht</h2>
+                </div>
+                <address>
+                     | +91 9891128018 | New Delhi, India
+                    <a href="https://dpandey2001.github.io/Deepak_Portfolio/">Portfolio</a>
+                </address>
+                <h3 class="resume-title">Summary</h3>
+                <p><em>Skilled Web developer with more than 2 years of excellent track record in designing,
+                        developing and implementing Software & AI applications. Utilize JavaScript frameworks like
+                        Angular,
+                        Angular, Bootstrap, Typescript, HTML, CSS, SQL, Node JS to write scalable and secure code with
+                        knack for problem-solving. Successfully optimized a visualization app resulting in 20% increase
+                        in efficiency. </em></p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 mb-4">
+                    <div class="resume-section">
+                        <h3 class="h4 mb-4">EMPLOYMENT</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">10/2023 – Present</div>
+                                <div class="timeline-content">
+                                    <h4 class="h5">AI Solutions Developer</h4>
+                                    <p>HFCL, New Delhi, India</p>
+                                    <ul>
+                                        <li>Developed professional dashboards in Power BI & web application for the organization to display sales data and manage data accordingly.</li>
+                                        <li>Developed a CMMI L-5 certified single-page web application leveraging
+                                            Angular and responsive design principles.</li>
+                                        <li>Won the AI Ideation organized by the organization and developed a Chabot
+                                            using Gemini API in angular 13 Node JS and Express JS and used scraping
+                                            logic as well as extensions used LLM, Neural Structure, and Cross domain
+                                            bypass</li>
+                                        <li>Won the Udemy Premium league for learning Generative AI.</li>
+                                        <li>Integrated third-party APIs for seamless data exchange and real-time
+                                            updates.</li>
+                                        <li>Designed and developed a dynamic dashboard for data visualization in
+                                            various formats like charts and tables. </li>
+                                        <li>Made innovative application for generating a QR code for each data as per
+                                            industry guidelines. And make bulk upload and download from csv logic.</li>
+                                        <li>Managing HFCL official website updates and changes in it.</li>
+                                        <li>Managing HFCL subsidiary company MMWL official website updates and changes
+                                            in it.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="resume-section">
+                        <h3 class="h4 mb-4">TECHNICAL EXPERIENCE</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">Personal Portfolio Website</div>
+                                <div class="timeline-content">
+                                    <h4 class="h5">HTML, CSS, JavaScript, Google Maps API</h4>
+                                    <p>Developed and deployed a responsive personal portfolio website to showcase
+                                        projects and professional background. Designed a clean and user-friendly UI
+                                        using HTML, CSS, and vanilla JavaScript. Integrated Google Maps API to visually
+                                        display current location. Implemented seamless page redirection for navigation
+                                        between sections (About, Projects, Contact, etc.). Built a functional contact
+                                        form with local storage support to retain user inputs for offline reference.</p>
+                                    <!-- <p>Currently pursuing studies.</p> --
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">ATS Tracker</div>
+                                <div class="timeline-content">
+                                    <h4 class="h5">HTML, CSS, JavaScript, and Gemini</h4>
+                                    <p>Developed an Applicant Tracking System (ATS) using HTML, CSS, JS to streamline
+                                        resume screening and shortlisting. Built an UI to upload and parse multiple
+                                        resumes simultaneously along with job description. Automated candidate ranking
+                                        with visual scores, allowing multi-candidate selection for faster recruitment
+                                        decisions.</p>
+                                    <!-- <p>Computer Science & Engineering</p> --
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="resume-section">
+                        <h3 class="h4 mb-4">EDUCATION</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">07/2023 – Present</div>
+                                <div class="timeline-content">
+                                    <h4 class="h5">Indira Gandhi National Open University</h4>
+                                    <p>Noida, India</p>
+                                    <p>Currently pursuing studies.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">08/2019 – 06/2022</div>
+                                <div class="timeline-content">
+                                    <h4 class="h5">Government Polytechnic Dwarahat</h4>
+                                    <p>Dwarahat, India</p>
+                                    <p>Computer Science & Engineering</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Java Project -->
-                <div class="col-md-6 mb-4">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Student Grade Calculator</h5>
-                            <p class="card-text">
-                                Console-based Java application that calculates total marks,
-                                average percentage and grade using user input.
-                            </p>
-                            <span class="badge bg-secondary">Java</span>
+                <div class="col-lg-6 mb-4">
+                    <div class="resume-section">
+                        <h3 class="h4 mb-4">LANGUAGES & TECHNOLOGIES</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">Frontend:</div>
+                                <div class="timeline-content">
+                                    <h4 class="h5">Angular, Bootstrap, Typescript, CSS, JavaScript, JQUERY, UI/UX DESIGN
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Backend & Database: </div>
+                                <div class="timeline-content">
+                                    <h4 class="h5">SQL, NODE JS, ASP Dotnet, Express JS</h4>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Tech skills: </div>
+                                <div class="timeline-content">
+                                    <h4 class="h5"> Power BI, API, Logic, Interface building, Prompt-Engineering, Chat-GPT,
+                                        Generative AI, Binding, Dependency injections.</h4>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">Soft Skills: </div>
+                                <div class="timeline-content">
+                                    <h4 class="h5">Attention to Detail, Responsible, Communication, Collaboration,
+                                        Problem-Solving, Time Management, Quick Learning.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-12 text-center">
+                    <a href="dpresume1307.pdf" class="btn btn-primary btn-lg" id="downloadResumeBtn" download>
+                        <i class="bi bi-download me-2"></i>Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="py-5 bg-dark-subtle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center mb-5">Testimonials</h2>
+                </div>
+            </div>
+            <div class="row" id="testimonials-container">
+                <!-- Testimonials will be dynamically loaded here --
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Blog Section -->
+    <!-- <section id="blog" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title text-center mb-5">Blog</h2>
+                </div>
+            </div>
+            <div class="row" id="blog-container">
+                <!-- Blog posts will be dynamically loaded here --
+            </div>
+        </div>
+    </section> -->
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <h3 class="h4 mb-4">Get In Touch</h3>
+                        <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach
+                            out!</p>
+                        <div class="contact-item mb-3">
+                            <i class="bi bi-envelope-fill me-3"></i>
+                            <span>priyabisht0305@gmail.com</span>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="bi bi-phone-fill me-3"></i>
+                            <span>9891128018</span>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="bi bi-geo-alt-fill me-3"></i>
+                            <span>New Delhi, India</span>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28012.81761727719!2d77.3952242647737!3d28.64168219218004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf02cab9e16df%3A0xb03482d8c00e67c!2sVijay%20Nagar%2C%20Ghaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1770445082004!5m2!1sen!2sin"  width="100%" height="290px"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="social-links mt-4">
+                            <a href="" target="_blank" class="me-3"><i
+                                    class="bi bi-github"></i></a>
+                            <a href="" target="_blank" class="me-3"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a href="" class="me-3"><i class="bi bi-envelope"></i></a>
                         </div>
                     </div>
                 </div>
-
+                <div class="col-lg-6">
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required />
+                            <div class="invalid-feedback">Please provide your name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required />
+                            <div class="invalid-feedback">Please provide a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" required />
+                            <div class="invalid-feedback">Please provide a subject.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            <div class="invalid-feedback">Please provide a message.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Resume -->
-    <section id="resume" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Resume</h2>
-
-            <h4>Summary</h4>
-            <p>
-                To work for an organization where I can reach my fullest potential using my creativity,
-                energy, team spirit and multi-tasking abilities. Seeking challenges and career growth in software development.
-            </p>
-
-            <h4>Education</h4>
-            <ul>
-                <li><strong>Bachelor of Computer Application</strong> – Indira Gandhi National Open University (Present)</li>
-                <li><strong>Intermediate (CBSE)</strong> – 2023</li>
-                <li><strong>High School (CBSE)</strong> – 2021</li>
-            </ul>
-
-            <h4>Experience</h4>
-            <p>
-                Trainee / Fresher aspiring to build career as Java Full Stack Developer.
-                Strong understanding of Java, database management, REST APIs and software testing fundamentals.
-            </p>
-
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Email: Priyabisht0305@gmail.com</p>
-            <p>Phone: +91 9891128018</p>
-            <p>Location: Ghaziabad, India</p>
-        </div>
-    </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">© 2026 Priya Bisht. All Rights Reserved.</p>
+    <footer class="bg-dark text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Priya Bisht. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        (function () {
+            emailjs.init("dp620966@gmail.com"); // Replaced with provided EmailJS user ID
+        })();
+    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
