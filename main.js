@@ -6,7 +6,7 @@ const icon = themeToggle.querySelector('i');
 // Check for saved theme preference or default to 'dark'
 const currentTheme = localStorage.getItem('theme') || 'dark';
 body.setAttribute('data-bs-theme', currentTheme);
-updateThemeIcon(currentTheme);
+updateThemeIcon(currentTheme);  
 
 themeToggle.addEventListener('click', () => {
   const currentTheme = body.getAttribute('data-bs-theme');
