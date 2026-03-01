@@ -31,7 +31,7 @@ const textArray = [
   'Java Full Stack Developer',
   // 'Data Analyst',
   'UI/UX Enthusiast',
-  'Problem Solver'
+  'Problem Solver' 
 ];
 
 let textIndex = 0;
