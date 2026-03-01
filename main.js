@@ -30,7 +30,7 @@ const typedText = document.getElementById('typed-text');
 const textArray = [
   'Java Full Stack Developer',
   // 'Data Analyst',
-  'UI/UX Enthusiast',
+  'Frontend Developer',
   'Problem Solver' 
 ];
 
