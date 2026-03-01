@@ -28,8 +28,8 @@ function updateThemeIcon(theme) {
 // Typing Effect
 const typedText = document.getElementById('typed-text');
 const textArray = [
-  'Web Developer',
-  'Data Analyst',
+  'Java Full Stack Developer',
+  // 'Data Analyst',
   'UI/UX Enthusiast',
   'Problem Solver'
 ];
